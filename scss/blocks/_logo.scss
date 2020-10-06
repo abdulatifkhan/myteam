@@ -1,0 +1,30 @@
+.logo__link {
+  flex-shrink: 0;
+  margin-right: 80px;
+}
+
+.logo__img {
+  display: block;
+  flex-shrink: 0;
+  width: 160px;
+  height: 40px;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@include breakpoint-down (770px) {
+  
+  .logo__img {
+    display: block;
+    width: 128px;
+    height: 32px;
+    margin-right: 10px;
+  }
+}
+
+@include breakpoint-down (375px) {
+
+}
