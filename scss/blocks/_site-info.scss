@@ -1,0 +1,44 @@
+.site-info {
+  width: 100%;
+  background-color: $sacramento-state-green;
+}
+
+.site-info__container {
+  padding: 140px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-info__heading {
+  margin: 0;
+  max-width: 445px;
+  font-size: 48px;
+  line-height: 48px;
+  color: $white-color;
+}
+
+.site-info__list {
+  @include reset-list;
+  width: 450px;
+}
+
+.site-info__iteam:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.iteam-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: $light-coral;
+}
+
+.iteam-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white-color;
+}

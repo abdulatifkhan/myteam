@@ -615,12 +615,9 @@ img {
   }
 }
 
-.site-main {
+.site-intro {
   width: 100%;
   background-color: #014e56;
-}
-
-.site-intro {
   position: relative;
   z-index: 1;
   padding-top: 55px;
@@ -714,5 +711,58 @@ img {
     font-size: 40px;
     line-height: 40px;
   }
+}
+
+.site-info {
+  width: 100%;
+  background-color: #012f34;
+}
+
+.site-info__container {
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-info__heading {
+  margin: 0;
+  max-width: 445px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.site-info__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 450px;
+}
+
+.site-info__iteam:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.iteam-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f67e7e;
+}
+
+.iteam-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
