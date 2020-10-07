@@ -1,10 +1,14 @@
 .site-info {
   width: 100%;
   background-color: $sacramento-state-green;
+  background-image: url(../../img/bg-pattern-home-3.svg);
+  background-repeat: no-repeat;
+  background-position: right calc(50% - 675px) bottom;
+  background-size: 200px 244px;
 }
 
 .site-info__container {
-  padding: 140px 0;
+  padding: 140px 10px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -12,19 +16,64 @@
 
 .site-info__heading {
   margin: 0;
+  position: relative;
+  z-index: 1;
   max-width: 445px;
   font-size: 48px;
   line-height: 48px;
   color: $white-color;
+  
+  &::before {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -55px;
+    width: 50px;
+    height: 4px;
+    background-color: $light-coral;
+    content: "";
+  }
 }
 
 .site-info__list {
   @include reset-list;
-  width: 450px;
+  max-width: 450px;
 }
 
 .site-info__iteam:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.site-info__iteam {
+  display: flex;
+  
+  &::before {
+    display: block;
+    margin-right: 23px;
+    flex-shrink: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.site-info__iteam--person::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/icon-person.svg);
+}
+
+.site-info__iteam--cog::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/icon-cog.svg); 
+}
+
+.site-info__iteam--chart::before {
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/icon-chart.svg)
 }
 
 .iteam-heading {
@@ -41,4 +90,63 @@
   font-size: 15px;
   line-height: 25px;
   color: $white-color;
+}
+
+@include breakpoint-down (770px) {
+  .site-info {
+    background-position: right calc(50% - 385px) top;
+  }
+
+  .site-info__container {
+    padding: 100px 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+    
+  .site-info__list {
+    max-width: 570px;
+  }
+
+  .site-info__heading {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+    text-align: left;
+  }
+  
+}
+
+
+@include breakpoint-down (375px) {
+  .site-info {
+    background-position: right calc(50% - 188px) top;
+  }
+
+  .site-info__container {
+    padding: 100px 24px;
+  }
+
+  .site-info__heading {
+    max-width: 240px;
+  }
+  
+  .site-info__iteam:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .site-info__iteam {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+
+    .iteam-heading {
+      margin-bottom: 8px;
+    }
+  }
 }

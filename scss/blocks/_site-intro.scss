@@ -1,13 +1,11 @@
 .site-intro {
   width: 100%;
   background-color: $midnight-green;
-  position: relative;
-  z-index: 1;
-  padding-top: 55px;
-  padding-bottom: 250px;
+  // position: relative;
+  // z-index: 1;
   background-image: url(../../img/bg-pattern-home-1.svg), url(../../img/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
-  background-position: left calc(50% - 700px) top 20%, right calc(50% - 400px) bottom;
+  background-position: left calc(50% - 680px) top 20%, right calc(50% - 400px) bottom;
   background-size: 200px, 360px;
 }
 
@@ -15,6 +13,8 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  padding-top: 55px;
+  padding-bottom: 250px;
 }
 
 .site-intro__heading {
