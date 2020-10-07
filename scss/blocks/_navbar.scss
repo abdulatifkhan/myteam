@@ -23,9 +23,12 @@
   @include reset-list;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   // margin-left: 80px;
   margin-right: 10px;
+}
+
+.navbar__list__header {
+  justify-content: space-between;
 }
 
 .navbar__iteam ~ .navbar__iteam {
@@ -70,7 +73,7 @@
     display: none;
   }
 
-  .button {
+  .button__header {
     display: none;
   }
 }

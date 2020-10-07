@@ -5,7 +5,6 @@
   max-width: 155px;
   white-space: nowrap;
   padding: 10px 32px;
-  border: 2px solid $white-color;
   box-sizing: border-box;
   border-radius: 24px;
   font-style: normal;
@@ -14,17 +13,9 @@
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  color: $white-color;
-  background-color: $midnight-green;
+  background-color: transparent;
   overflow: hidden;
   // text-overflow: ellipsis;
-
-  &:hover {
-    color: $sacramento-state-green;
-    background-color: $white-color;
-    transition: color 0.3s ease,
-                background-color 0.3s ease;
-  }
 }
 
 .button.disabled,
@@ -36,13 +27,24 @@
   cursor: disabled;
 }
 
-@include breakpoint-down (770px) {
+.button__header {
+  color: $white-color;
+  border: 2px solid $white-color;
+  &:hover {
+    color: $sacramento-state-green;
+    background-color: $white-color;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
+  }
+} 
 
-}
-
-@include breakpoint-down (375px) {
-
-  .button {
-    display: none;
+.button__footer {
+  color: $sacramento-state-green;
+  border: 2px solid $sacramento-state-green;
+  &:hover {
+    color: $white-color;
+    background-color: $sacramento-state-green;
+    transition: color 0.3s ease,
+                background-color 0.3s ease;
   }
 }

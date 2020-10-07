@@ -1,0 +1,132 @@
+.site-success {
+  width: 100%;
+  background-color: $deep-jungle-green;
+  background-image: url(../../img/bg-pattern-home-4-about-3.svg),
+  url(../../img/bg-pattern-home-5.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 601px) top,
+  right calc(50% - 574px) bottom;
+  background-size: 147px 100px, 200px 100px;
+}
+
+.site-success__container {
+  padding: 140px 10px;
+}
+
+.site-success__heading {
+  margin: 0;
+  margin-bottom: 92px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: $white-color;
+
+  &--blue {
+    color: $rapture-blue;
+  }
+}
+
+.site-success__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-success__iteam {
+  position: relative;
+  z-index: 1;
+  color: $white-color;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -35px;
+    right: 42%;
+    width: 67px;
+    height: 56px;
+    background-image: url(../../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 67px 56px;
+    content: "";
+  }
+}
+
+.site-success__quotes {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.site-success__person {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: $rapture-blue;
+}
+
+.site-success__position {
+  margin: 0;
+  margin-bottom: 32px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.site-success__img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+}
+
+@include breakpoint-down (770px) {
+  .site-success {
+    background-position: left top,
+    right bottom;
+  }
+
+  .site-success__container {
+    padding: 100px 10px;
+  }
+
+  .site-success__heading {
+    max-width: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 84px;
+    align-items: center;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .site-success__list {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .site-success__iteam:not(:last-child) {
+    margin-bottom: 84px;
+  }
+
+  .site-success__iteam {
+    max-width: 573px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@include breakpoint-down (375px) {
+  .site-success {
+    background-position: left calc(50% - 113px) top,
+    right bottom;
+  }
+
+  .site-success__container {
+    padding: 140px 10px 164px 10px;
+  }
+}

@@ -1,0 +1,53 @@
+.site-started {
+  width: 100%;
+  background-color: $light-coral;
+  background-image: url(../../img/bg-pattern-home-6-about-5.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 575px) bottom;
+  background-size:200px 144px;
+}
+
+.site-started__container {
+  padding: 76px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.site-started__heading {
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  color: $sacramento-state-green;
+}
+
+@include breakpoint-down (770px) {
+  .site-started {
+    background-position: left calc(50% - 284px) bottom;
+  }
+
+  .site-started__container {
+    padding: 94px 40px;
+  }
+
+  .site-started__heading {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@include breakpoint-down (375px) {
+  .site-started {
+    background-position: left calc(50% - 88px) bottom;
+  }
+
+  .site-started__container {
+    padding: 100px 40px;
+    flex-direction: column;
+  }
+
+  .site-started__heading {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}
