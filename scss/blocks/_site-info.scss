@@ -46,6 +46,10 @@
 
 .site-info__iteam {
   display: flex;
+
+  &--contact{
+    align-items: center;
+  }
   
   &::before {
     display: block;

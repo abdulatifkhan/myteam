@@ -1,0 +1,83 @@
+.site-contact {
+  width: 100%;
+  background-color: $midnight-green;
+  background-image: url(../../img/bg-pattern-about-2-contact-1.svg), url(../../img/bg-pattern-contact-2.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 674px) top 50px, right calc(50% - 675px) top 415px;
+  background-size: 200px 200px, 200px 225px;
+}
+
+.site-contact__container {
+  padding: 45px 10px 120px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-contact__main-heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 64px;
+  line-height: 100px;
+  color: $white-color;
+}
+
+.site-contact__mini-heading {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 48px;
+  color: $light-coral;
+}
+
+.form__inner {
+  margin-bottom: 24px;
+}
+
+.site-contact__form {
+  width: 542px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-bottom: 1px solid $white-color;
+  background-color: transparent;
+}
+
+.form__input--message {
+  height: 84px;
+  white-space: normal;
+}
+
+.form__button {
+  border: 0;
+  color: $deep-jungle-green;
+  background-color: $white-color;
+}
+
+@include breakpoint-down (770px) {
+  .site-contact {
+    background-position: left calc(50% - 385px) top 50px, right calc(50% - 380px) top 985px;
+  }
+
+  .site-contact__container {
+    padding: 112px 10px;
+    flex-direction: column;
+  }
+
+  .site-contact__info {
+    margin-bottom: 64px;
+  }
+
+  .site-contact__main-heading, 
+  .site-contact__mini-heading {
+    text-align: center;
+  }
+}
+
+
+@include breakpoint-down (375px) {
+  
+}

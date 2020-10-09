@@ -1,6 +1,14 @@
 .logo__link {
+  display: block;
   flex-shrink: 0;
-  margin-right: 80px;
+
+  &--header {
+    margin-right: 80px;
+  }
+
+  &--footer {
+    margin-bottom: 25px;
+  }
 }
 
 .logo__img {
@@ -17,6 +25,10 @@
 
 @include breakpoint-down (770px) {
   
+  .logo__link--footer {
+    margin-right: 80px;
+  }
+
   .logo__img {
     display: block;
     width: 128px;
