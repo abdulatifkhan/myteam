@@ -76,7 +76,7 @@
     margin: 0;
   }
 
-  .address {
+  .site-footer__address {
     width: 50%;
     text-align: right;
     margin: 0;
@@ -94,7 +94,9 @@
 
 @include breakpoint-down (375px) {
   .site-footer__container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -102,21 +104,50 @@
     margin-bottom: 24px;
   }
 
+  .logo__link--footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .navbar__list--footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
   .logo__img {
+    display: inline-block;
+    margin: 0;
+    justify-content: center;
     width: 96px;
     height: 24px;
   }
 
   .site-footer__address {
     margin-bottom: 40px;
-  }
-
-  .address__home {
     text-align: center;
   }
   
   .site-footer__social-list {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .address__wrapper {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .site-footer__social-copy {
+    display: flex;
+    flex-direction: column;
+
+    .site-footer__social-list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
   }
 }
